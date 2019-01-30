@@ -1,0 +1,38 @@
+/*
+Design Token 是设计工程化视角的产物，也是设计与前端之间共用的语言。
+
+使用 Design Token 可长期维护产品的视觉体系，在一套设计系统中它具备统一命名规则；它本质上通过Token的方式定义设计系统中的设计原子，
+如颜色、投影、字体、字号等的寓意，使其与具体的样式值解偶；比如设计师设计的产品品牌色为#6633cc，Token为Brand1，当产品风格需要迭代时只需要修改一次Brand1的对应变量色值即可实现整套产品的UI迭代；
+对Design Token 合理的定义可以让属性参数更容易理解，也更便于对产品风格的控制，保证实际设计中的视觉一致性和扩展性。
+
+在实际设计与标注过程中，理论上产品设计中的所有样式需要取至Design Token，设计标准过程中应该使用Design Token进行标注与前端开发。
+*/
+
+// color-default 内置色
+@color-white: #ffffff; // 纯白
+@color-black: #000000; // 纯黑
+@color-transparent: transparent;
+// color-brand 品牌色
+@color-brand1-1: #eef3f9; // 浅
+@color-brand1-6: #5584ff; // 常规
+@color-brand1-9: #3e71f7; // 深
+// color-neutural 中立色
+@color-line1-1: #e6e7eb; // 浅
+@color-line1-2: #dcdee3; // 常规
+@color-line1-3: #c4c6cf; // 深
+@color-line1-4: #a0a2ad; // 重
+@color-fill1-1: #f7f8fa; // 浅
+@color-fill1-2: #f2f3f7; // 常规
+@color-fill1-3: #ebecf0; // 深
+@color-fill1-4: #e2e4e8; // 重
+@color-text1-1: #cccccc; // 禁用
+@color-text1-2: #999999; // 水印/提示
+@color-text1-3: #666666; // 正文/标题
+@color-text1-4: #333333; // 正文/标题
+// color-function 功能色
+@color-success-1: #e4fdda; // 浅
+@color-success-2: #cdf2be; // 常规
+@color-success-3: #46bc15; // 深
+@color-success-4: #e4fdda; // 重
+@color-success-1: #e4fdda; // 浅
+@color-success-1: #e4fdda; // 浅

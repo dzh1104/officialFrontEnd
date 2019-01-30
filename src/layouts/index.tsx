@@ -22,10 +22,9 @@ export function getSinglePath(pathname = '/', level = 1) {
 }
 
 const Layout: BasicLayoutComponent<BasicLayoutProps> = props => {
-  const firstLevenPath = getSinglePath(props.location.pathname)
-  // const firstLevenPath = 'basic'
+  const firstLevelPath = getSinglePath(props.location.pathname)
   let ChlLayout = null
-  switch (firstLevenPath) {
+  switch (firstLevelPath) {
     case 'basic':
       ChlLayout = () => <BasicLayout>{props.children}</BasicLayout>
       break

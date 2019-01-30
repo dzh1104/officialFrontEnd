@@ -1,9 +1,9 @@
 export const dva = {
   config: {
     onError(err) {
-      err.preventDefault();
+      err.preventDefault()
       // tslint:disable-next-line:no-console
-      console.error(err.message);
+      console.error(err.message)
     },
   },
-};
+}

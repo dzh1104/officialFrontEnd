@@ -1,4 +1,3 @@
-
 // ref: https://umijs.org/config/
 export default {
   treeShaking: true,
@@ -7,17 +6,19 @@ export default {
     ['umi-plugin-react', {
       antd: true,
       dva: true,
-      dynamicImport: { webpackChunkName: true },
+      dynamicImport: {
+        webpackChunkName: true
+      },
       title: 'refactor',
       dll: true,
       routes: {
         exclude: [
-        
+
           /models\//,
           /services\//,
           /model\.(t|j)sx?$/,
           /service\.(t|j)sx?$/,
-        
+
           /components\//,
         ],
       },
