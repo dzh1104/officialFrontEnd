@@ -1,6 +1,9 @@
+import path from 'path';
+
 // ref: https://umijs.org/config/
 export default {
   treeShaking: true,
+  outputPath: './build',
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
@@ -24,4 +27,7 @@ export default {
       },
     }],
   ],
+  alias: {
+    styles: path.resolve(__dirname, 'src/styles/')
+  }
 }
